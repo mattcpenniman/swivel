@@ -1,0 +1,148 @@
+{
+ "anchor": "A3",
+ "cells": {
+  "A6": "Row Labels",
+  "A7": "c1",
+  "A8": "c2",
+  "A9": "Grand Total",
+  "B3": "Column Labels",
+  "B4": "a1",
+  "B5": "b1",
+  "B6": "Sum of N",
+  "B7": 1.0,
+  "B8": 2.0,
+  "B9": 3.0,
+  "C6": "Count of N2",
+  "C7": 1.0,
+  "C8": 1.0,
+  "C9": 2.0,
+  "D5": "b2",
+  "D6": "Sum of N",
+  "D7": 3.0,
+  "D9": 3.0,
+  "E6": "Count of N2",
+  "E7": 1.0,
+  "E9": 1.0,
+  "F4": "a1 Sum of N",
+  "F7": 4.0,
+  "F8": 2.0,
+  "F9": 6.0,
+  "G4": "a1 Count of N2",
+  "G7": 2.0,
+  "G8": 1.0,
+  "G9": 3.0,
+  "H4": "a2",
+  "H5": "b1",
+  "H6": "Sum of N",
+  "I6": "Count of N2",
+  "J5": "b2",
+  "J6": "Sum of N",
+  "J8": 5.0,
+  "J9": 5.0,
+  "K6": "Count of N2",
+  "K8": 1.0,
+  "K9": 1.0,
+  "L4": "a2 Sum of N",
+  "L8": 5.0,
+  "L9": 5.0,
+  "M4": "a2 Count of N2",
+  "M8": 1.0,
+  "M9": 1.0,
+  "N4": "Total Sum of N",
+  "N7": 4.0,
+  "N8": 7.0,
+  "N9": 11.0,
+  "O4": "Total Count of N2",
+  "O7": 2.0,
+  "O8": 2.0,
+  "O9": 4.0
+ },
+ "data": [
+  [
+   "A",
+   "B",
+   "C",
+   "N",
+   "T",
+   "Flag",
+   "Err",
+   "Mix"
+  ],
+  [
+   "a1",
+   "b1",
+   "c1",
+   1,
+   "x",
+   true,
+   1,
+   1
+  ],
+  [
+   "a1",
+   "b1",
+   "c2",
+   2,
+   "y",
+   false,
+   {
+    "$error": "#N/A"
+   },
+   "s"
+  ],
+  [
+   "a1",
+   "b2",
+   "c1",
+   3,
+   null,
+   true,
+   3,
+   null
+  ],
+  [
+   "a2",
+   "b1",
+   "c1",
+   null,
+   "z",
+   null,
+   4,
+   true
+  ],
+  [
+   "a2",
+   "b2",
+   "c2",
+   5,
+   "w",
+   false,
+   5,
+   2.5
+  ]
+ ],
+ "excel_version": "16.0",
+ "spec": {
+  "columns": [
+   "A",
+   "B"
+  ],
+  "rows": [
+   "C"
+  ],
+  "values": [
+   {
+    "field": "N",
+    "func": "sum",
+    "name": "Sum of N"
+   },
+   {
+    "field": "N",
+    "func": "count",
+    "name": "Count of N2"
+   }
+  ]
+ },
+ "table_range1": "A3:O9",
+ "table_range2": "A3:O9"
+}

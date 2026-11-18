@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "swivel"
+dynamic = ["version"]
+description = "Add refreshed pivot tables to Excel .xlsx files, losslessly and without Excel."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "mattcpenniman" }]
+dependencies = ["openpyxl>=3.1", "lxml>=4.9"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Office/Business :: Financial :: Spreadsheet",
+]
+
+[project.optional-dependencies]
+excel = ["pywin32>=306; sys_platform == 'win32'"]
+yaml = ["pyyaml>=6"]
+test = ["pytest>=7", "hypothesis>=6", "pillow>=9"]
+
+[project.scripts]
+swivel = "swivel.cli:main"
+
+[tool.setuptools.dynamic]
+version = { attr = "swivel.__version__" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-p no:faulthandler"
+markers = ["excel: needs Microsoft Excel via COM (Windows); skipped when unavailable"]

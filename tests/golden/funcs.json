@@ -1,0 +1,137 @@
+{
+ "anchor": "A3",
+ "cells": {
+  "A3": "Row Labels",
+  "A4": "a1",
+  "A5": "a2",
+  "A6": "Grand Total",
+  "B3": "Product of N",
+  "B4": 6.0,
+  "B5": 5.0,
+  "B6": 30.0,
+  "C3": "Count of N",
+  "C4": 3.0,
+  "C5": 1.0,
+  "C6": 4.0,
+  "D3": "StdDev of N",
+  "D4": 1.0,
+  "D5": "#DIV/0!",
+  "D6": 1.707825127659933,
+  "E3": "StdDevp of N",
+  "E4": 0.816496580927726,
+  "E5": 0.0,
+  "E6": 1.479019945774904,
+  "F3": "Var of N",
+  "F4": 1.0,
+  "F5": "#DIV/0!",
+  "F6": 2.9166666666666665,
+  "G3": "Varp of N",
+  "G4": 0.6666666666666666,
+  "G5": 0.0,
+  "G6": 2.1875
+ },
+ "data": [
+  [
+   "A",
+   "B",
+   "C",
+   "N",
+   "T",
+   "Flag",
+   "Err",
+   "Mix"
+  ],
+  [
+   "a1",
+   "b1",
+   "c1",
+   1,
+   "x",
+   true,
+   1,
+   1
+  ],
+  [
+   "a1",
+   "b1",
+   "c2",
+   2,
+   "y",
+   false,
+   {
+    "$error": "#N/A"
+   },
+   "s"
+  ],
+  [
+   "a1",
+   "b2",
+   "c1",
+   3,
+   null,
+   true,
+   3,
+   null
+  ],
+  [
+   "a2",
+   "b1",
+   "c1",
+   null,
+   "z",
+   null,
+   4,
+   true
+  ],
+  [
+   "a2",
+   "b2",
+   "c2",
+   5,
+   "w",
+   false,
+   5,
+   2.5
+  ]
+ ],
+ "excel_version": "16.0",
+ "spec": {
+  "rows": [
+   "A"
+  ],
+  "values": [
+   {
+    "field": "N",
+    "func": "product",
+    "name": "Product of N"
+   },
+   {
+    "field": "N",
+    "func": "count_nums",
+    "name": "Count of N"
+   },
+   {
+    "field": "N",
+    "func": "stdev",
+    "name": "StdDev of N"
+   },
+   {
+    "field": "N",
+    "func": "stdevp",
+    "name": "StdDevp of N"
+   },
+   {
+    "field": "N",
+    "func": "var",
+    "name": "Var of N"
+   },
+   {
+    "field": "N",
+    "func": "varp",
+    "name": "Varp of N"
+   }
+  ]
+ },
+ "table_range1": "A3:G6",
+ "table_range2": "A3:G6"
+}

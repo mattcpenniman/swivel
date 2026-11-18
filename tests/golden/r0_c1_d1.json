@@ -1,0 +1,97 @@
+{
+ "anchor": "A3",
+ "cells": {
+  "A5": "Sum of Amount",
+  "B3": "Column Labels",
+  "B4": 2023.0,
+  "B5": 12.5,
+  "C4": 2024.0,
+  "C5": 11.25,
+  "D4": "Grand Total",
+  "D5": 23.75
+ },
+ "data": [
+  [
+   "Region",
+   "Product",
+   "Year",
+   "Amount",
+   "Qty",
+   "When"
+  ],
+  [
+   "East",
+   "Apple",
+   2023,
+   10.5,
+   1,
+   {
+    "$date": "2024-01-05T00:00:00"
+   }
+  ],
+  [
+   "West",
+   "Pear",
+   2024,
+   3,
+   2,
+   {
+    "$date": "2024-02-05T00:00:00"
+   }
+  ],
+  [
+   "East",
+   "pear",
+   2024,
+   7.25,
+   3,
+   {
+    "$date": "2024-01-05T00:00:00"
+   }
+  ],
+  [
+   "North",
+   "Apple",
+   2023,
+   null,
+   4,
+   {
+    "$date": "2024-03-05T00:00:00"
+   }
+  ],
+  [
+   null,
+   "Fig",
+   2024,
+   1,
+   5,
+   {
+    "$date": "2024-03-05T00:00:00"
+   }
+  ],
+  [
+   "West",
+   "Apple",
+   2023,
+   2,
+   null,
+   {
+    "$date": "2024-03-09T00:00:00"
+   }
+  ]
+ ],
+ "excel_version": "16.0",
+ "spec": {
+  "columns": [
+   "Year"
+  ],
+  "values": [
+   {
+    "field": "Amount",
+    "func": "sum"
+   }
+  ]
+ },
+ "table_range1": "A3:D5",
+ "table_range2": "A3:D5"
+}

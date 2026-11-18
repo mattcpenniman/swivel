@@ -1,0 +1,135 @@
+{
+ "anchor": "A3",
+ "cells": {
+  "A10": "Grand Total",
+  "A5": "Row Labels",
+  "A6": "East",
+  "A7": "North",
+  "A8": "West",
+  "A9": "(blank)",
+  "B10": 12.5,
+  "B3": "Column Labels",
+  "B4": 2023.0,
+  "B5": "Sum of Amount",
+  "B6": 10.5,
+  "B8": 2.0,
+  "C10": 2.5,
+  "C5": "Average of Qty",
+  "C6": 1.0,
+  "C7": 4.0,
+  "D10": 11.25,
+  "D4": 2024.0,
+  "D5": "Sum of Amount",
+  "D6": 7.25,
+  "D8": 3.0,
+  "D9": 1.0,
+  "E10": 3.3333333333333335,
+  "E5": "Average of Qty",
+  "E6": 3.0,
+  "E8": 2.0,
+  "E9": 5.0,
+  "F10": 23.75,
+  "F4": "Total Sum of Amount",
+  "F6": 17.75,
+  "F8": 5.0,
+  "F9": 1.0,
+  "G10": 3.0,
+  "G4": "Total Average of Qty",
+  "G6": 2.0,
+  "G7": 4.0,
+  "G8": 2.0,
+  "G9": 5.0
+ },
+ "data": [
+  [
+   "Region",
+   "Product",
+   "Year",
+   "Amount",
+   "Qty",
+   "When"
+  ],
+  [
+   "East",
+   "Apple",
+   2023,
+   10.5,
+   1,
+   {
+    "$date": "2024-01-05T00:00:00"
+   }
+  ],
+  [
+   "West",
+   "Pear",
+   2024,
+   3,
+   2,
+   {
+    "$date": "2024-02-05T00:00:00"
+   }
+  ],
+  [
+   "East",
+   "pear",
+   2024,
+   7.25,
+   3,
+   {
+    "$date": "2024-01-05T00:00:00"
+   }
+  ],
+  [
+   "North",
+   "Apple",
+   2023,
+   null,
+   4,
+   {
+    "$date": "2024-03-05T00:00:00"
+   }
+  ],
+  [
+   null,
+   "Fig",
+   2024,
+   1,
+   5,
+   {
+    "$date": "2024-03-05T00:00:00"
+   }
+  ],
+  [
+   "West",
+   "Apple",
+   2023,
+   2,
+   null,
+   {
+    "$date": "2024-03-09T00:00:00"
+   }
+  ]
+ ],
+ "excel_version": "16.0",
+ "spec": {
+  "columns": [
+   "Year"
+  ],
+  "rows": [
+   "Region"
+  ],
+  "values": [
+   {
+    "field": "Amount",
+    "func": "sum"
+   },
+   {
+    "field": "Qty",
+    "func": "average",
+    "name": "Average of Qty"
+   }
+  ]
+ },
+ "table_range1": "A3:G10",
+ "table_range2": "A3:G10"
+}
