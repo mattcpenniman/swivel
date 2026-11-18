@@ -7,7 +7,7 @@ name = "swivel"
 dynamic = ["version"]
 description = "Add refreshed pivot tables to Excel .xlsx files, losslessly and without Excel."
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.10"
 license = { text = "MIT" }
 authors = [{ name = "mattcpenniman" }]
 dependencies = ["openpyxl>=3.1", "lxml>=4.9"]
