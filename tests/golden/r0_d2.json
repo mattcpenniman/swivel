@@ -1,0 +1,89 @@
+{
+ "anchor": "A3",
+ "cells": {
+  "A3": "Sum of N",
+  "A4": 11.0,
+  "B3": "Count of T",
+  "B4": 4.0
+ },
+ "data": [
+  [
+   "A",
+   "B",
+   "C",
+   "N",
+   "T",
+   "Flag",
+   "Err",
+   "Mix"
+  ],
+  [
+   "a1",
+   "b1",
+   "c1",
+   1,
+   "x",
+   true,
+   1,
+   1
+  ],
+  [
+   "a1",
+   "b1",
+   "c2",
+   2,
+   "y",
+   false,
+   {
+    "$error": "#N/A"
+   },
+   "s"
+  ],
+  [
+   "a1",
+   "b2",
+   "c1",
+   3,
+   null,
+   true,
+   3,
+   null
+  ],
+  [
+   "a2",
+   "b1",
+   "c1",
+   null,
+   "z",
+   null,
+   4,
+   true
+  ],
+  [
+   "a2",
+   "b2",
+   "c2",
+   5,
+   "w",
+   false,
+   5,
+   2.5
+  ]
+ ],
+ "excel_version": "16.0",
+ "spec": {
+  "values": [
+   {
+    "field": "N",
+    "func": "sum"
+   },
+   {
+    "field": "T",
+    "func": "count",
+    "name": "Count of T"
+   }
+  ]
+ },
+ "table_range1": "A3:B4",
+ "table_range2": "A3:B4"
+}

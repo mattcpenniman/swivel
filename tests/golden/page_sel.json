@@ -1,0 +1,100 @@
+{
+ "anchor": "A3",
+ "cells": {
+  "A1": "A",
+  "A3": "Row Labels",
+  "A4": "b1",
+  "A5": "b2",
+  "A6": "Grand Total",
+  "B1": "a2",
+  "B3": "Sum of N",
+  "B5": 5.0,
+  "B6": 5.0
+ },
+ "data": [
+  [
+   "A",
+   "B",
+   "C",
+   "N",
+   "T",
+   "Flag",
+   "Err",
+   "Mix"
+  ],
+  [
+   "a1",
+   "b1",
+   "c1",
+   1,
+   "x",
+   true,
+   1,
+   1
+  ],
+  [
+   "a1",
+   "b1",
+   "c2",
+   2,
+   "y",
+   false,
+   {
+    "$error": "#N/A"
+   },
+   "s"
+  ],
+  [
+   "a1",
+   "b2",
+   "c1",
+   3,
+   null,
+   true,
+   3,
+   null
+  ],
+  [
+   "a2",
+   "b1",
+   "c1",
+   null,
+   "z",
+   null,
+   4,
+   true
+  ],
+  [
+   "a2",
+   "b2",
+   "c2",
+   5,
+   "w",
+   false,
+   5,
+   2.5
+  ]
+ ],
+ "excel_version": "16.0",
+ "spec": {
+  "filters": [
+   [
+    "A",
+    [
+     "a2"
+    ]
+   ]
+  ],
+  "rows": [
+   "B"
+  ],
+  "values": [
+   {
+    "field": "N",
+    "func": "sum"
+   }
+  ]
+ },
+ "table_range1": "A3:B6",
+ "table_range2": "A1:B6"
+}

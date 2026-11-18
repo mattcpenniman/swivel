@@ -1,0 +1,103 @@
+{
+ "anchor": "A3",
+ "cells": {
+  "A3": "Column Labels",
+  "A4": "a1",
+  "A5": "Sum of N",
+  "A6": 6.0,
+  "B5": "Count of T",
+  "B6": 2.0,
+  "C4": "a2",
+  "C5": "Sum of N",
+  "C6": 5.0,
+  "D5": "Count of T",
+  "D6": 2.0,
+  "E4": "Total Sum of N",
+  "E6": 11.0,
+  "F4": "Total Count of T",
+  "F6": 4.0
+ },
+ "data": [
+  [
+   "A",
+   "B",
+   "C",
+   "N",
+   "T",
+   "Flag",
+   "Err",
+   "Mix"
+  ],
+  [
+   "a1",
+   "b1",
+   "c1",
+   1,
+   "x",
+   true,
+   1,
+   1
+  ],
+  [
+   "a1",
+   "b1",
+   "c2",
+   2,
+   "y",
+   false,
+   {
+    "$error": "#N/A"
+   },
+   "s"
+  ],
+  [
+   "a1",
+   "b2",
+   "c1",
+   3,
+   null,
+   true,
+   3,
+   null
+  ],
+  [
+   "a2",
+   "b1",
+   "c1",
+   null,
+   "z",
+   null,
+   4,
+   true
+  ],
+  [
+   "a2",
+   "b2",
+   "c2",
+   5,
+   "w",
+   false,
+   5,
+   2.5
+  ]
+ ],
+ "excel_version": "16.0",
+ "spec": {
+  "columns": [
+   "A"
+  ],
+  "values": [
+   {
+    "field": "N",
+    "func": "sum"
+   },
+   {
+    "field": "T",
+    "func": "count",
+    "name": "Count of T"
+   }
+  ]
+ },
+ "table_range1": "A3:F6",
+ "table_range2": "A3:F6"
+}

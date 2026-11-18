@@ -1,0 +1,100 @@
+{
+ "anchor": "A3",
+ "cells": {
+  "A3": "Row Labels",
+  "A4": "East",
+  "A5": "North",
+  "A6": "West",
+  "A7": "(blank)",
+  "A8": "Grand Total",
+  "B3": "Sum of Amount",
+  "B4": 17.75,
+  "B6": 5.0,
+  "B7": 1.0,
+  "B8": 23.75
+ },
+ "data": [
+  [
+   "Region",
+   "Product",
+   "Year",
+   "Amount",
+   "Qty",
+   "When"
+  ],
+  [
+   "East",
+   "Apple",
+   2023,
+   10.5,
+   1,
+   {
+    "$date": "2024-01-05T00:00:00"
+   }
+  ],
+  [
+   "West",
+   "Pear",
+   2024,
+   3,
+   2,
+   {
+    "$date": "2024-02-05T00:00:00"
+   }
+  ],
+  [
+   "East",
+   "pear",
+   2024,
+   7.25,
+   3,
+   {
+    "$date": "2024-01-05T00:00:00"
+   }
+  ],
+  [
+   "North",
+   "Apple",
+   2023,
+   null,
+   4,
+   {
+    "$date": "2024-03-05T00:00:00"
+   }
+  ],
+  [
+   null,
+   "Fig",
+   2024,
+   1,
+   5,
+   {
+    "$date": "2024-03-05T00:00:00"
+   }
+  ],
+  [
+   "West",
+   "Apple",
+   2023,
+   2,
+   null,
+   {
+    "$date": "2024-03-09T00:00:00"
+   }
+  ]
+ ],
+ "excel_version": "16.0",
+ "spec": {
+  "rows": [
+   "Region"
+  ],
+  "values": [
+   {
+    "field": "Amount",
+    "func": "sum"
+   }
+  ]
+ },
+ "table_range1": "A3:B8",
+ "table_range2": "A3:B8"
+}
