@@ -17,6 +17,24 @@ swivel.add_pivot(
 )
 ```
 
+## Install
+
+Each tagged release (`vX.Y.Z`) on GitHub carries a pure-Python wheel
+(`py3-none-any`). Pin it by URL, which also works for builds that only accept
+pre-built wheels, such as a Lambda build using
+`pip install --platform manylinux2014_x86_64 --only-binary=:all:`:
+
+```
+swivel @ https://github.com/mattcpenniman/swivel/releases/download/v0.1.0/swivel-0.1.0-py3-none-any.whl
+```
+
+Its dependencies (`openpyxl`, `lxml`) ship manylinux wheels, so they install
+under the same flags; CI checks this on every change.
+
+To cut a release: bump `__version__` in `src/swivel/__init__.py`, merge, then
+push the tag `v<version>`. The *Release* workflow tests, builds, checks the tag
+matches the version, smoke-tests a Lambda-style install, and publishes.
+
 ## Why it is "consistently refreshed"
 
 Every pivot table swivel writes is refreshed twice over:

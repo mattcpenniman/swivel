@@ -22,3 +22,19 @@ jobs:
       # Excel differential tests skip themselves: hosted runners have no Excel.
       # The goldens in tests/golden still pin swivel to Excel's own output.
       - run: python -m pytest -q
+
+  # The wheel must install under a Lambda build's flags (wheels only, Linux,
+  # cp313) and work there: catches a dependency that drops its manylinux wheel.
+  lambda-wheel:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - run: |
+          python -m pip install build
+          python -m build --wheel
+          python -m pip install --platform manylinux2014_x86_64 --python-version 3.13 \
+            --implementation cp --only-binary=:all: --target lambda dist/*.whl
+          PYTHONPATH=lambda python -s scripts/lambda_smoke.py
